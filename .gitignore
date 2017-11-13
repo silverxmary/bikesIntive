@@ -1,0 +1,13 @@
+*.class
+
+# Mobile Tools for java (J2M#)
+.mtj.temp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# virtual machine crash logs
+/onlineshopping/target/
+/shoppingbackend/target/
