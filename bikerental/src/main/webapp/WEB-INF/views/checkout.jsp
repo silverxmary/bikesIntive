@@ -42,7 +42,7 @@
 		<div class="row">
 			
 			
-			<p>You Selected - ${nombre} -  and must pay  ${precio}</p>
+			<p>You Selected - Pack ${nombre} -  and must pay  ${precio}</p>
 		</div>
 	</c:if>
 	<c:if test="${famPack==true}">
@@ -54,7 +54,7 @@
 		<table>
 			<c:forEach items="${famPacksForm.bikePacksFam}" var="p" varStatus="loop">
 				<tr>
-					<td>NombrePacK ${p.nombre}</td>
+					<td>Nombre PacK ${p.nombre}</td>
 					<td>Precio - ${p.precio}</td>
 
 				</tr>

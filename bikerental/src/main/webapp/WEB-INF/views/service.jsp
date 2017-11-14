@@ -7,7 +7,7 @@
 			<p>This is a  price preview of selected service</p>
 			</div>
 		<form:form action="${contextRoot}/check" method="POST"  commandName="packForm">
-			<form:input type="text" id="nombre" path="nombre" value="${service}"/>
+			<form:input type="hidden" id="nombre" path="nombre" value="${service}"/>
 			
 			  How long will you rent the bike
 			  <form:input type="text" id="rentTime" path="rentTime" onkeypress='return event.charCode >= 48 && event.charCode <= 57'/>

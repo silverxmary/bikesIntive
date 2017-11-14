@@ -73,6 +73,8 @@ public class BikeRentalController {
 
 	}
 	
+	
+	
 	@RequestMapping(value = {"/check"}, method = RequestMethod.POST)
 	public ModelAndView checkPack(@ModelAttribute("amountPreview")BikePack packForm,  Model model){
 		BikePack selectPack = new BikePack(packForm.getNombre(),(int)packForm.getRentTime(),false);

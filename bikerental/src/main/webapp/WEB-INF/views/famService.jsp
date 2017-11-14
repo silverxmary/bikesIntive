@@ -1,13 +1,13 @@
 	<div class="container">
 			<div class="row">
-			<h1>Selected Service - ${service}</h1>
+			<h1>Selected Service - Pack ${service}</h1>
 			<hr/>
 			</div>
 			<div class="row">
 			<p>This is a  price preview of selected service</p>
 			</div>
 		<form name="formFam" action="${contextRoot}/selectPacks" method="get">
-			<input type="text" id="nombre" path="nombre" value="${service}"/>
+			<input type="hidden" id="nombre" path="nombre" value="${service}"/>
 			
 				How many packs will you need
 			   <select name="choose" path="choose" id="choose">

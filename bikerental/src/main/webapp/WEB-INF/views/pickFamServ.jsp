@@ -2,7 +2,7 @@
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 	<div class="container">
 			<div class="row">
-			<h1>Selected Service - ${service}</h1>
+			<h1>Selected Service - Pack ${service}</h1>
 			<hr/>
 			</div>
 			<div class="row">
@@ -13,7 +13,7 @@
 	<table>
 	<c:forEach items="${famPacksForm.bikePacksFam}" var="p" varStatus="loop">
 			<tr>
-				<td>NombrePAcK 
+				<td>Nombre PacK 
 				<form:select name="bikePacksFam[${loop.index}].nombre"  path="bikePacksFam[${loop.index}].nombre"  id="bikePacksFam-${loop.index}">
 					<option value="0">Select</option>
 					<option value="1">Pack1</option>
